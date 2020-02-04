@@ -10,5 +10,5 @@ module.exports = {
 }
 
 function find(){
-    return db('scheme');
+    return db('schemes');
 }
