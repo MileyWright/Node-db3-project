@@ -43,7 +43,9 @@ function add(scheme) {
          count > 0 ? this.get(id) : null
      ))
  }
- 
-function remove(id) {
 
+function remove(id) {
+    return db('schemes')
+    .where('id', id)
+    .del();
 }
